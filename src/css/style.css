@@ -1,0 +1,143 @@
+/* Estilo globla */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo da calculadora */
+.calc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #010101;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+/* Estilização da div que irá exibir o resultado */
+.calc .resultado {
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+
+.calc .resultado h1{
+    font-weight: 600;
+    font-size: 80px;
+}
+
+/* Estilo do teclado */
+.calc .teclado {
+    display: flex;
+}
+
+.calc .teclado .numeros-outros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+/* Estilização de botões especificos, como por exemplo: limpar */
+.calc .teclado .numeros-outros .limpa-outros ul{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilização dos números */
+.calc .teclado .numeros-outros .numeros ul{
+    display: flex;
+    width: 260px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Estilização dos operadores */
+.calc .teclado .operadores {
+    display: flex;
+    flex-direction: column;
+    height: 470px;
+}
+
+.calc .teclado .operadores ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 11px;
+}
+
+/* Definindo estilo comum entre as li */
+.calc .teclado .numeros-outros .limpa-outros li, 
+.calc .teclado .numeros-outros .numeros li,
+.calc .teclado .operadores li {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+/* Definindo as cores das li de cada div */
+.calc .teclado .numeros-outros .limpa-outros li {
+    background-color: rgb(145, 145, 145);
+}
+
+.calc .teclado .numeros-outros .numeros li {
+    background-color: rgb(55, 54, 53);
+}
+
+.calc .teclado .operadores li {
+    background-color: rgb(248, 149, 13);
+}
+
+/* Estilizando o hover */
+.calc .teclado .numeros-outros .limpa-outros li:hover {
+    background: rgba(255, 255, 255, 0.7);
+} 
+
+.calc .teclado .numeros-outros .numeros li:hover {
+    background: rgba(130, 126, 122, 0.7);
+}
+
+.calc .teclado .operadores li:hover {
+    background: rgb(255, 177, 68);
+} 
+
+/* Aumentando o tamanho de um div em especifico */
+.calc .teclado .numeros-outros .numeros li:nth-child(10) {
+    border-radius: 0px;
+    width: 65%;
+    border-radius: 100px;
+}
+
+/* Definindo alterações no estilo da página de acordo com a sua largura mínima */
+@media(min-width: 400px) {
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #919191;
+    }
+
+    .calc {
+        position: absolute;
+        top: 10%;
+        width: 390px;
+        height: 700px;
+        box-shadow: 0px 0px 50px;
+        border-radius: 30px;
+    }
+}
