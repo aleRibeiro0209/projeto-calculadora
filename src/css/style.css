@@ -141,3 +141,13 @@
         border-radius: 30px;
     }
 }
+
+/* Definindo alterações no estilo da página de acordo com a sua altura mínima */
+@media(min-height: 800px) {
+
+    .calc {
+        top: 10%;
+        height: 700px;
+    }
+    
+}
