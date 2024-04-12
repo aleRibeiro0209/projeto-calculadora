@@ -98,7 +98,7 @@
     background-color: rgb(55, 54, 53);
 }
 
-.calc .teclado .operadores li {
+.calc .teclado .operadores li{
     background-color: rgb(248, 149, 13);
 }
 
@@ -114,6 +114,11 @@
 .calc .teclado .operadores li:hover {
     background: rgb(255, 177, 68);
 } 
+
+.selected {
+    transform: scale(0.9);
+    filter:brightness(70%);
+}
 
 /* Aumentando o tamanho de um div em especifico */
 .calc .teclado .numeros-outros .numeros li:nth-child(10) {

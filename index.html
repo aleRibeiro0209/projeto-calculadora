@@ -10,13 +10,13 @@
 <body>
     <main class="calc">
         <div class="resultado">
-            <h1 id="result">0</h1>
+            <h1 class="result">0</h1>
         </div>
         <div class="teclado">
             <div class="numeros-outros">
                 <div class="limpa-outros">
                     <ul>
-                        <li>Ac</li>
+                        <li data-action="clear">Ac</li>
                         <li>+/-</li>
                         <li>%</li>
                     </ul>
@@ -33,17 +33,17 @@
                         <li>2</li>
                         <li>3</li>
                         <li>0</li>
-                        <li>,</li>
+                        <li data-action="decimal">.</li>
                     </ul>
                 </div>
             </div>
             <div class="operadores">
                 <ul>
-                    <li>/</li>
-                    <li>x</li>
-                    <li>-</li>
-                    <li>+</li>
-                    <li>=</li>
+                    <li class="key--operator" data-action="divide">÷</li>
+                    <li class="key--operator" data-action="multiply">&times;</li>
+                    <li class="key--operator" data-action="subtract">-</li>
+                    <li class="key--operator" data-action="add">+</li>
+                    <li class="key--equal" data-action="calculate">=</li>
                 </ul>
             </div>
             
